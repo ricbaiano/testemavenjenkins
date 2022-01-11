@@ -8,7 +8,7 @@ workflows:
 jobs:
   teste:
     docker:
-      - image: cimg/openjdk:11
+      - image: cimg/openjdk:17.0.1
     steps:
       - checkout
       - run: java --version
