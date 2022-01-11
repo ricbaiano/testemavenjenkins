@@ -15,5 +15,5 @@ jobs:
           name: Compilando Projeto
           command: mvn clean install
       - store_test_results:
-          path: test-results
+          path: /home/circleci/project/test-results
 
