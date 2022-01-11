@@ -11,4 +11,6 @@ jobs:
       - image: cimg/openjdk:17.0.1
     steps:
       - checkout
-      - run: java --version
+      - run: 
+          name: Compilando Projeto
+          command: mvn clean install
