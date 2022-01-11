@@ -14,3 +14,6 @@ jobs:
       - run: 
           name: Compilando Projeto
           command: mvn clean install
+      - store_test_results:
+          path: test-results
+
