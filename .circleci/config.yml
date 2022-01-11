@@ -1,0 +1,14 @@
+version: 2.1
+
+workflows:
+  deploy-teste:
+    jobs:
+      - teste
+
+jobs:
+  teste:
+    docker:
+      - image: cimg/openjdk:11
+    steps:
+      - checkout
+      - run: java --version
